@@ -1,0 +1,10 @@
+{
+  "name": "reportvisualsummary",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "jquery": "~1.11.0",
+    "chartjs": "~0.2.0"
+  },
+  "devDependencies": {}
+}
