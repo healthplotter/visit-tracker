@@ -1,5 +1,4 @@
 'use strict';
-// generated on 2014-07-09 using generator-gulp-webapp 0.1.0
 
 var gulp = require('gulp'),
 		mainBowerFiles = require('main-bower-files');

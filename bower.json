@@ -1,10 +1,12 @@
 {
-  "name": "reportvisualsummary",
+  "name": "visit-tracker",
   "private": true,
   "dependencies": {
-    "modernizr": "~2.6.2",
-    "jquery": "~1.11.0",
-    "chartjs": "~0.2.0"
+    "jquery": "~2.1.1",
+    "jquery-placeholder": "~2.0.8",
+    "jquery.cookie": "~1.4.1",
+    "fastclick": "~1.0.3",
+    "modernizr": "~2.8.3"
   },
   "devDependencies": {}
 }

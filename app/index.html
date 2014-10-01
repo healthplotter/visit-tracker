@@ -9,6 +9,7 @@
 
 		<!-- build:css styles/vendor.css -->
 		<!-- bower:css -->
+		<link rel="stylesheet" href="bower_components/foundation/css/foundation.css"/>
 		<!-- endbower -->
 		<!-- endbuild -->
 
@@ -25,6 +26,154 @@
 
 	<body>
 		<div class="main-container">
+			<h1>Welcome to HealthPlotter</h1>
+			<h4>We empower onsite practitioners to showcase their true value to employers through actionable data.</h4>
+			<input placeholder="Email">
+			<input placeholder="Password">
+			<a href="#forgotpasword">Forgot Password?</a>
+
+			<div class="button">Log In</div>
+
+			<p> <a href="#about">About</a> | <a href="#help">Help</a> | <a href="#terms">Terms</a> | <a href="#privacy">Privacy</a> </p>
+
+			<hr>
+
+			<h1>Create an Employer Account</h1>
+			
+			<h3>Employer Details</h3>
+				<input placeholder="Company Name">
+				<p>Address</p>
+					<input placeholder="Street">
+					<input placeholder="Suite">
+					<input placeholder="City">
+					<input placeholder="State">
+					<input placeholder="ZIP">
+					<input type="checkbox" name="option1" value="true">Mark as Headquarters<br>
+				<div class="button">Add Location</div>
+
+			<h3>Executive Details</h3>
+				<input placeholder="Name">
+				<input placeholder="Title">
+				<input placeholder="Email">
+				<!-- randomly generate password?? -->
+			<div class="button">Add Executive</div>
+			
+			<h3>Manage Claims Data</h3>
+				<div class="button">Import Claims Data</div>
+				<div class="button">Update Existing Claims Data</div>
+
+			<div class="button">Save This Employer Account</div>
+
+			<hr>
+
+			<h1>Create a Practitioner Organization Account</h1>
+			
+			<h3>Practitioner Details</h3>
+				<input placeholder="Company Name">
+				<p>Address</p>
+					<input placeholder="Street">
+					<input placeholder="Suite">
+					<input placeholder="City">
+					<input placeholder="State">
+					<input placeholder="ZIP">
+					<input type="checkbox" value="true">Practitioner Headquarters<br>
+				<div class="button">Add Location</div>
+
+			<h3>Practitioner Details</h3>
+				<input placeholder="Name">
+				<input placeholder="Title">
+				<input placeholder="Email">
+				<!-- randomly generate password?? -->
+				<input type="checkbox" value="true">Mark as Managing Practitioner<br>
+
+				<p>Assign this practitioner to an exsting employer: </p>
+				
+			<div>
+				<select name="dropdown">
+					<option>Select an Employer</option>
+					<option> <a href="#">Employer 1</a> </option>
+					<option> <a href="#">Employer 2</a> </option>
+					<option> <a href="#">Employer 3</a> </option>
+				</select>
+			</div>
+
+			<div>
+				<select name="dropdown">
+					<option>Select a Location</option>
+					<option> <a href="#">Location 1</a> </option>
+					<option> <a href="#">Location 2</a> </option>
+					<option> <a href="#">Location 3</a> </option>
+				</select>
+			</div>
+			<div class="button">Add Additional Practitioners</div>
+			
+			<div class="button">Save This Employer Account</div>
+
+			<hr>
+
+			<h1>Confirm Your Account</h1>
+			<p>Welcome, [First Last Name].</p>
+			<p>Your HealthPlotter [employer executive/practitioner] account is now active. Please enter a new password.</p>
+			<input placeholder="New Password">
+			<input placeholder="Confirm Password">
+			<div class="button">Save</div>
+
+			<hr>
+
+			<h1>Visit Capture</h1>
+
+			<div>
+				<select name="dropdown">
+					<option>Member Name</option>
+					<option> <a href="#">John Smith</a> </option>
+					<option> <a href="#">Jane Doe</a> </option>
+				</select>
+			</div>
+
+			<div>
+				<select name="dropdown">
+					<option>Reason for Visit</option>
+					<option> <a href="#">Episodic Care</a> </option>
+					<option> <a href="#">Risk Management</a> </option>
+				</select>
+			</div>
+
+			<div>
+				<select name="dropdown">
+					<option>Care Performed</option>
+					<option> <a href="#">Episodic Care</a> </option>
+					<option> <a href="#">Risk Management</a> </option>
+				</select>
+			</div>
+
+			<input class="note-input">
+
+			<hr>
+
+			<h1>Account Information</h1>
+			<input placeholder="Name">
+			<input placeholder="Title">
+			<input placeholder="Email">
+			<input placeholder="Password">
+			<div class="button">Save</div>
+
+			<hr>
+
+			<h1>Daily Time Tracking</h1>
+			<p>Mon. Oct. 6, 2014</p>
+
+
+			<h3>Practitioner Details</h3>
+				<p>Visits</p>
+					<input placeholder="Episodic Care">
+					<input placeholder="Risk Management">
+				<input placeholder="Charting">
+				<input placeholder="Outreach">				
+				<input placeholder="Education">
+				<input placeholder="Administrative">
+
+
+
 		</div> <!-- closes main-container div -->
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -40,7 +189,10 @@
 		<!-- build:js scripts/vendor.js -->
 		<!-- bower:js -->
 		<script src="bower_components/jquery/dist/jquery.js"></script>
-		<script src="bower_components/chartjs/Chart.min.js"></script>
+		<script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+		<script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+		<script src="bower_components/fastclick/lib/fastclick.js"></script>
+		<script src="bower_components/foundation/js/foundation.js"></script>
 		<!-- endbower -->
 		<!-- endbuild -->
 

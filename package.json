@@ -1,5 +1,5 @@
 {
-  "name": "reportvisualsummary",
+  "name": "visit-tracker",
   "version": "0.0.0",
   "dependencies": {
     "bower-files": "^1.5.0",
